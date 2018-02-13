@@ -1,0 +1,38 @@
+.ion-tab-icon-base {    
+  width: 2.8rem;    
+  height: 2.8rem;    
+  padding: 0px 1px 1px;    
+}    
+    
+.ion-tab-icon-md-base {    
+  width: 3.2rem;  
+  min-width: 3.2rem !important;    
+  height: 3.2rem;  
+}    
+    
+$tabImageName: 'home' 'func' 'news' 'my';    
+@for $i from 1 to 5 {    
+  //for ios    
+  .ion-ios-tab-#{nth($tabImageName, $i)} {    
+    @extend .ion-tab-icon-base;  
+    content: url("../assets/icon/#{nth($tabImageName, $i)}-on.png");  
+  }    
+  .ion-ios-tab-#{nth($tabImageName, $i)}-outline {    
+    @extend .ion-tab-icon-base;  
+    content: url("../assets/icon/#{nth($tabImageName, $i)}-off.png");    
+  }    
+    
+  // for android    
+  .tabs-md .tab-button[aria-selected=true] {    
+    .ion-md-tab-#{nth($tabImageName, $i)} {    
+        @extend .ion-tab-icon-md-base;
+      content: url("../assets/icon/#{nth($tabImageName, $i)}-on.png");    
+    }    
+  }    
+  .tabs-md .tab-button[aria-selected=false] {    
+    .ion-md-tab-#{nth($tabImageName, $i)} {  
+        @extend .ion-tab-icon-md-base;
+      content: url("../assets/icon/#{nth($tabImageName, $i)}-off.png");    
+    }    
+  }    
+}  
