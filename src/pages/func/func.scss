@@ -1,3 +1,13 @@
-page-func {
-
+ion-row{
+    ion-col{
+        img{
+            height: 5rem;
+            margin-left: 18%;
+        }
+        p{
+            line-height: 0rem;
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
 }

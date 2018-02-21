@@ -15,7 +15,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class FuncPage {
 
+  pet:string;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.pet = "office";
   }
 
   ionViewDidLoad() {

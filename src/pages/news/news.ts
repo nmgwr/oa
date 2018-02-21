@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 
 /**
  * Generated class for the NewsPage page.
@@ -15,7 +15,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class NewsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, 
+    public alertCtrl:AlertController) {
+    
+  }
+
+  /*筛选*/
+  query(){
+    console.log("查询");
   }
 
   ionViewDidLoad() {

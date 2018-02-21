@@ -1,5 +1,5 @@
 #home_slide{
-    height: 10rem;
+    height: 13rem;
 }
 ion-slide{
     top:0; 
@@ -9,4 +9,36 @@ ion-slide{
     background-repeat: no-repeat; 
     background-size: 100%;
     zoom: 1; 
+}
+.menu_1{
+    margin-top: 1rem;
+    ion-row{
+        ion-col{
+            img{
+                height: 5rem;
+                margin-left: 18%;
+            }
+            p{
+                line-height: 0rem;
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+    }
+}
+.menu_2{
+    margin-top: 1rem;
+    ion-row{
+        ion-col{
+            img{
+                height: 3rem;
+                margin-left: 18%;
+            }
+            p{
+                line-height: 0rem;
+                font-size: xx-small;
+                text-align: center;
+            }
+        }
+    }
 }

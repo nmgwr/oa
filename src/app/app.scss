@@ -13,3 +13,23 @@
     contain: strict;
     background: #f53d3d !important;
 }
+/*菜单标题*/
+.title{
+    margin-left: 0.6rem;
+    width: 2rem;
+    height: 1rem;
+    background-color: red;
+    float: left;
+    margin-top: 0.5rem;
+}
+.title-word{
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    font-weight: 600;
+}
+
+hr{
+    height: 1px;
+    border: none;
+    border-top: 1px dashed #c8c7cc
+}

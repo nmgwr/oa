@@ -15,7 +15,9 @@ export class TabsPage {
   news = NewsPage;
   my = MyPage;
 
-  constructor() {
+  news_count:string;
 
+  constructor() {
+    this.news_count = "4";
   }
 }
