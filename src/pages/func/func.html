@@ -1,5 +1,5 @@
-<ion-content padding>
-  <div>
+<ion-content scroll="false">
+  <div class="func-segment">
     <ion-segment [(ngModel)]="pet">
       <ion-segment-button value="office">
         行政办公
@@ -15,115 +15,199 @@
       </ion-segment-button>
     </ion-segment>
   </div>
-
-  <div [ngSwitch]="pet">
-    <div *ngSwitchCase="'check'">
-      <ion-row>
-        <ion-col col-3>
-          <img src="assets/icon/tj.png">
-          <p>签到打卡</p>
-        </ion-col>
-        <ion-col col-3>
-          <img src="assets/icon/rmb.png">
-          <p>我的值班</p>
-        </ion-col>
-      </ion-row>
+  <ion-scroll scrollY="true" class="func-scroll">
+    <div [ngSwitch]="pet">
+      <div *ngSwitchCase="'check'">
+        <ion-row>
+          <ion-col col-3>
+            <img src="assets/icon/tj.png">
+            <p>签到打卡</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rmb.png">
+            <p>我的值班</p>
+          </ion-col>
+        </ion-row>
+      </div>
+      <div *ngSwitchCase="'achievement'">
+        <ion-row>
+          <ion-col col-3>
+            <img src="assets/icon/tj.png">
+            <p>签到打卡</p>
+          </ion-col>
+        </ion-row>
+      </div>
+      <div *ngSwitchCase="'count'">
+        <ion-row>
+          <ion-col col-3>
+            <img src="assets/icon/tj.png">
+            <p>签到打卡</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rh.png">
+            <p>会议通知</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rmb.png">
+            <p>我的值班</p>
+          </ion-col>
+        </ion-row>
+      </div>
+      <div *ngSwitchCase="'office'">
+        <ion-row>
+          <ion-col col-3>
+            <img src="assets/icon/tj.png">
+            <p>签到打卡</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rh.png">
+            <p>会议通知</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rmb.png">
+            <p>我的值班</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/shop.png">
+            <p>资源申请</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/shop.png">
+            <p>资源申请</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rmb.png">
+            <p>我的值班</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rh.png">
+            <p>会议通知</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rmb.png">
+            <p>我的值班</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/shop.png">
+            <p>资源申请</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/shop.png">
+            <p>资源申请</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rmb.png">
+            <p>我的值班</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rh.png">
+            <p>会议通知</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rmb.png">
+            <p>我的值班</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/shop.png">
+            <p>资源申请</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/shop.png">
+            <p>资源申请</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rmb.png">
+            <p>我的值班</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rh.png">
+            <p>会议通知</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rmb.png">
+            <p>我的值班</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/shop.png">
+            <p>资源申请</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/shop.png">
+            <p>资源申请</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rmb.png">
+            <p>我的值班</p>
+          </ion-col><ion-col col-3>
+            <img src="assets/icon/shop.png">
+            <p>资源申请</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rmb.png">
+            <p>我的值班</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rh.png">
+            <p>会议通知</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rmb.png">
+            <p>我的值班</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/shop.png">
+            <p>资源申请</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/shop.png">
+            <p>资源申请</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rmb.png">
+            <p>我的值班</p>
+          </ion-col><ion-col col-3>
+            <img src="assets/icon/shop.png">
+            <p>资源申请</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rmb.png">
+            <p>我的值班</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rh.png">
+            <p>会议通知</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rmb.png">
+            <p>我的值班</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/shop.png">
+            <p>资源申请</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/shop.png">
+            <p>资源申请</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rmb.png">
+            <p>我的值班</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/shop.png">
+            <p>资源申请</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/rmb.png">
+            <p>我的值班</p>
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/icon/shop.png">
+            <p>资源申请</p>
+          </ion-col>
+        </ion-row>
+      </div>
     </div>
-    <div *ngSwitchCase="'achievement'">
-      <ion-row>
-        <ion-col col-3>
-          <img src="assets/icon/tj.png">
-          <p>签到打卡</p>
-        </ion-col>
-      </ion-row>
-    </div>
-    <div *ngSwitchCase="'count'">
-      <ion-row>
-        <ion-col col-3>
-          <img src="assets/icon/tj.png">
-          <p>签到打卡</p>
-        </ion-col>
-        <ion-col col-3>
-          <img src="assets/icon/rh.png">
-          <p>会议通知</p>
-        </ion-col>
-        <ion-col col-3>
-          <img src="assets/icon/rmb.png">
-          <p>我的值班</p>
-        </ion-col>
-      </ion-row>
-    </div>
-    <div *ngSwitchCase="'office'">
-      <ion-row>
-        <ion-col col-3>
-          <img src="assets/icon/tj.png">
-          <p>签到打卡</p>
-        </ion-col>
-        <ion-col col-3>
-          <img src="assets/icon/rh.png">
-          <p>会议通知</p>
-        </ion-col>
-        <ion-col col-3>
-          <img src="assets/icon/rmb.png">
-          <p>我的值班</p>
-        </ion-col>
-        <ion-col col-3>
-          <img src="assets/icon/shop.png">
-          <p>资源申请</p>
-        </ion-col>
-        <ion-col col-3>
-          <img src="assets/icon/shop.png">
-          <p>资源申请</p>
-        </ion-col>
-        <ion-col col-3>
-          <img src="assets/icon/rmb.png">
-          <p>我的值班</p>
-        </ion-col>
-        <ion-col col-3>
-          <img src="assets/icon/rh.png">
-          <p>会议通知</p>
-        </ion-col>
-        <ion-col col-3>
-          <img src="assets/icon/rmb.png">
-          <p>我的值班</p>
-        </ion-col>
-        <ion-col col-3>
-          <img src="assets/icon/shop.png">
-          <p>资源申请</p>
-        </ion-col>
-        <ion-col col-3>
-          <img src="assets/icon/shop.png">
-          <p>资源申请</p>
-        </ion-col>
-        <ion-col col-3>
-          <img src="assets/icon/rmb.png">
-          <p>我的值班</p>
-        </ion-col>
-        <ion-col col-3>
-          <img src="assets/icon/rh.png">
-          <p>会议通知</p>
-        </ion-col>
-        <ion-col col-3>
-          <img src="assets/icon/rmb.png">
-          <p>我的值班</p>
-        </ion-col>
-        <ion-col col-3>
-          <img src="assets/icon/shop.png">
-          <p>资源申请</p>
-        </ion-col>
-        <ion-col col-3>
-          <img src="assets/icon/shop.png">
-          <p>资源申请</p>
-        </ion-col>
-        <ion-col col-3>
-          <img src="assets/icon/rmb.png">
-          <p>我的值班</p>
-        </ion-col>
-        <ion-col col-3>
-          <img src="assets/icon/shop.png">
-          <p>资源申请</p>
-        </ion-col>
-      </ion-row>
-    </div>
-  </div>
+  </ion-scroll>
+  
 </ion-content>

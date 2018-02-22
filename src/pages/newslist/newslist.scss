@@ -1,0 +1,34 @@
+.date{
+    font-size: 1rem !important;
+}
+.notice-img{
+    border-radius:0 !important;
+    width:5rem !important;
+    height: 5rem !important;
+}
+.notice-title-red{
+    color: red;
+    font-weight: 600 !important;
+}
+.notice-query{
+    top: 1%;
+    height: 3%;
+    width: 90%;
+    float: right;
+    margin-right: 5%;
+}
+::-webkit-input-placeholder{
+    font-size: 1rem;
+}
+.notice-title{
+    height: 2rem;
+    width: 12rem;
+}
+.newsList{
+    height: 110%;
+}
+.news-list-scroll{
+    width: 100%;
+    height: 93%;
+    margin-top: 12%;
+}

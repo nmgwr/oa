@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { FuncPage } from '../pages/func/func';
 import { MyPage } from '../pages/my/my';
 import { NewsPage } from '../pages/news/news';
+import { NewslistPage } from '../pages/newslist/newslist';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -20,7 +21,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     FuncPage,
     MyPage,
     NewsPage,
-    TabsPage
+    TabsPage,
+    NewslistPage
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     FuncPage,
     MyPage,
     NewsPage,
-    TabsPage
+    TabsPage,
+    NewslistPage
   ],
   providers: [
     StatusBar,
