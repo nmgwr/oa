@@ -12,7 +12,7 @@ export class NewslistPage {
   pageIndex=1;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    // 加载三条未读假数据
+    // 初始化加载三条未读假数据
     let arr = [];
     for(let i = 0; i < 3; i++){
       arr.push({
@@ -31,6 +31,7 @@ export class NewslistPage {
     console.log('ionViewDidLoad NewslistPage');
   }
 
+  // 获取新闻列表
   getNewsList(){
     let arr = this.newsList;
     for(let i = 0; i < 15; i++){
@@ -45,10 +46,24 @@ export class NewslistPage {
     this.newsList = arr;
   }
 
+  // 下一页
   nextPage(infiniteScroll){
     console.log("加载第"+this.pageIndex+"页");
     this.pageIndex++;
-    infiniteScroll.complete();
+    setTimeout(() => {
+      console.log('上拉加载结束');
+      infiniteScroll.complete();
+    }, 2000);
+    
+  }
+  // 下拉刷新
+  doRefresh(refresher){
+    console.log("下拉刷新开始");
+    this.pageIndex = 1;
+    setTimeout(() => {
+      console.log('下拉属性结束');
+      refresher.complete();
+    }, 2000);
   }
 
 }

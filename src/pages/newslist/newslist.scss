@@ -1,4 +1,4 @@
-.date{
+.notice-date{
     font-size: 1rem !important;
 }
 .notice-img{
@@ -11,8 +11,7 @@
     font-weight: 600 !important;
 }
 .notice-query{
-    top: 1%;
-    height: 3%;
+    height: 2.4rem;
     width: 90%;
     float: right;
     margin-right: 5%;
@@ -20,15 +19,8 @@
 ::-webkit-input-placeholder{
     font-size: 1rem;
 }
-.notice-title{
-    height: 2rem;
-    width: 12rem;
-}
-.newsList{
-    height: 110%;
-}
-.news-list-scroll{
-    width: 100%;
-    height: 93%;
-    margin-top: 12%;
+.newslist{
+    .scroll-content{
+        margin-bottom: 0px !important;
+    }
 }

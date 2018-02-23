@@ -1,21 +1,24 @@
-<ion-content class="newsList" scroll="false">
+<ion-header>
   <button ion-button block menuToggle class="notice-query">
     筛选
     <ion-icon name="search"></ion-icon>
   </button>
-  <ion-scroll scrollY="true" class="news-list-scroll">
-    <ion-list>
-      <ion-item *ngFor="let item of newsList">
-        <ion-avatar item-start>
-          <img class="notice-img" src="{{item.icon}}">
-        </ion-avatar>
-        <h3 [ngClass]="{'notice-title-red': item.isRade == 1}">{{item.title}}</h3>
-        <p>{{item.content}}</p>
-        <p class="date">{{item.createTime}}</p>
-      </ion-item>
-    </ion-list>
-    <ion-infinite-scroll (ionInfinite)="nextPage($event)" threshold="1rem" position="top">
+</ion-header>
+<ion-content class="newslist">
+   <ion-refresher class="news-refresh" (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content pullingText="拉下我可以刷新欧" refreshingText="正在重新加载..."></ion-refresher-content>
+  </ion-refresher> 
+  <ion-list class="notice-list">
+    <ion-item *ngFor="let item of newsList">
+      <ion-avatar item-start>
+        <img class="notice-img" src="{{item.icon}}">
+      </ion-avatar>
+      <h3 [ngClass]="{'notice-title-red': item.isRade == 1}">{{item.title}}</h3>
+      <p>{{item.content}}</p>
+      <p class="notice-date">{{item.createTime}}</p>
+    </ion-item>
+  </ion-list>
+  <ion-infinite-scroll (ionInfinite)="nextPage($event)">
       <ion-infinite-scroll-content loadingText="正在加载，请稍后..."></ion-infinite-scroll-content>
-    </ion-infinite-scroll> 
-  </ion-scroll>
+  </ion-infinite-scroll> 
 </ion-content>
